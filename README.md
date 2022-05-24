@@ -1,7 +1,7 @@
 # Account-Generator
 Create a customized account from command line. Import into pass or echo into terminal 
 
-chmod a+x *.sh
+chmod a+x ./*.sh
 
 m3o.sh 
 #m3o curl -fssl https://install.m3o.com/cli | /bin/bash
