@@ -11,7 +11,6 @@ wget -O strain.json "https://random-data-api.com/api/cannabis/random_cannabis?si
 strain=`jq -r ".[1].strain" strain.json | sed 's/\s//g'|tr -d '\n'`
 
 weedEmail=$strain$emailmix
-echo $weedEmail
 genpass=`pass generate mypass/$weedEmail 16`
 mypass=`pass mypass/$weedEmail`
 echo "Email: $weedEmail"
