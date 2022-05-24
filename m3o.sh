@@ -17,7 +17,7 @@ strain=`jq -r ".[1].strain" strain.json | sed 's/\s//g'|tr -d '\n'`
 
 weedEmail=$strain$emailmix
 
-mainpw=`/home/bataboom/bin/m3o password generate > genpw.json` &> /dev/null
+mainpw=`/home/yourusername/bin/m3o password generate > genpw.json` &> /dev/null
 mainpwparse=`jq -r .password genpw.json` &> /dev/null
 
 echo "Email: $weedEmail"
