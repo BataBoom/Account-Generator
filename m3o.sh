@@ -16,7 +16,6 @@ wget -O strain.json "https://random-data-api.com/api/cannabis/random_cannabis?si
 strain=`jq -r ".[1].strain" strain.json | sed 's/\s//g'|tr -d '\n'`
 
 weedEmail=$strain$emailmix
-echo $weedEmail
 
 mainpw=`/home/bataboom/bin/m3o password generate > genpw.json` &> /dev/null
 mainpwparse=`jq -r .password genpw.json` &> /dev/null
