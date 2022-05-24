@@ -12,4 +12,6 @@ Import into pass => https://www.passwordstore.org/
 
 Random Data for EmailTopic => https://random-data-api.com/
 
+Json https://stedolan.github.io/jq/
+
 Setup catch-all address's or use https://simplelogin.io/
